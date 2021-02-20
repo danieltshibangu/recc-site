@@ -1,31 +1,52 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: lightblue;
+  background: linear-gradient( -45deg, #f66, #f55, #f77, #f77);
+  background-size: 800% 800%;
+  animation: gradient 15s ease infinite;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+html, body {
+  height:100%;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* creating the header */
 header {
   width: 100%;
-  height: 150px;
-  background-color: red;
+  height: 3em;
+  top:0;
+  left:0;
+  z-index:999;
+}
+
+header div {
+  height:100%;
+  display:inline-block;
 }
 
 /* Creating the highlighted movie profile */
 .selected-show {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background: BLACK;
   border: 1px solid black;
   position: relative;
-  top: 50px;
   backdrop-filter: blur(5px);
 
   /* centers the circle to the middle */
   display: block;
-  margin-left: auto;
+  margin-left: 50px;
   margin-right: auto;
+  z-index:5;
+
+  top:30%;
 }
 
 .movie-img-bubble {
@@ -33,11 +54,67 @@ header {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 3.5%;
+  top: 6%;
+
 
   border-radius: 50%;
-  height: 93%;
-  width: 93%;
+  height: 87%;
+  width: 87%;
 
-  
+  background-color: white;
+}
+
+#wave-box-one {
+  transform: rotate(80deg); 
+  margin-left: -150px;
+  margin-top: -250px;
+
+}
+
+.wave {
+  position: fixed;
+  opacity: .4;
+  width: 1500px;
+  height: 1300px;
+  border-radius: 43%;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+.wave.-one {
+  animation: rotate 7000ms infinite linear;
+  opacity: .1;
+  background: #0af;
+}
+
+.wave.-two {
+  animation: rotate 3000ms infinite linear;
+  opacity: .1;
+  background: black;
+}
+
+.wave.-three {
+  animation: rotate 7500ms infinite linear;
+  background-color: #77daff;
+}
+
+#wave-box-two {
+  transform: rotate(80deg); 
+  height:100%;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+#wave-box-two .wave {
+  position: fixed;
+  opacity: .4;
+  width: 1500px;
+  height: 1300px;
+  margin-left: -150px;
+  margin-top: -250px;
+  border-radius: 43%;
 }
