@@ -4,40 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="navigation.css" />
     <title>Document</title>
   </head>
+
+ <!-------------------------------------------------------------------------------------------------------------------------------------->
+
+
   <body>
     <!--- start with inline navigation for the html header-->
-    <header>
-      <nav>
-      <div id="profile">profile</div>
-      <div id="liked"></div>
-      <div id="user-settings"></div>
+    <header id="site-header" role="banner"> 
+      <nav id="site-nav" role="navigation">
+        <!-- future navigation-->
       </nav>
     </header>
 
     <!-- program the center of the recommendation tree-->
-    <div class="selected-show">
-      <div class="movie-img-bubble">
+    <section>
+      <div class="selected-show">
+        <div class="movie-img-bubble"></div>
       </div>
-    </div>
-    <div class="rec-link"></div>
 
-    <div id='wave-box-one'>
-      <div class='wave -one'></div>
-      <div class='wave -two'></div>
-      <div class='wave -three'></div>
-  </div>
+      <div class="rec-link"></div>
 
-  <div id='wave-box-two'>
-    <div class='wave -one'></div>
-    <div class='wave -two'></div>
-    <div class='wave -three'></div>
-</div>
+      <div id='wave-box-one'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+      </div>
 
+      <div id='wave-box-two'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+      </div>
+    </section>
 
-
-
+    <script src="script.js"></script>
   </body>
-  <script src="js/myscript.js"></script>
+
+
+
+  <!-------------------------------------------------------------------------------------------------------------------------------------->
+
+
+  <footer id="follow">
+    <div id='social-media'>
+      <a href="#">
+        <div class="facebook"">
+        <img src='/movie-html\icons-img\facebook.png' alt='facebook-logo' />
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="twitter">
+          <img src='/movie-html\icons-img\twitter.png' alt="twitter-logo" />
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="instagram">
+          <img src='/movie-html\icons-img\instagram.png' alt='instagram-logo' />
+        </div>
+      </a>
+
+    </div>
+
+  </footer>
 </html>
