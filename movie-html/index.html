@@ -13,15 +13,23 @@
 
   <body>
     <!--- start with inline navigation for the html header-->
-    <header id="site-header" role="banner"> 
-      <nav id="site-nav" role="navigation">
+    <header id="site-header" role="banner">
+      <nav id="nav-menu-side-1" role="navigation">
+        <ul>
+          <li><a>HOME</a></li>
+          <li><a>GENRES</a></li>
+          <li><a>POPULAR</a></li>
+          <li><a>RANDOM</a></li>
+        </ul>
         <!-- future navigation-->
       </nav>
     </header>
 
+    <!-------------------------------------------------------------------------------------------------------------------------------------->
+
     <!-- program the center of the recommendation tree-->
     <section>
-      <div class="selected-show">
+      <div class="selected-show" onload="myLoadFunc()">
         <div class="movie-img-bubble"></div>
       </div>
 
@@ -52,23 +60,26 @@
     <div id='social-media'>
       <a href="#">
         <div class="facebook"">
-        <img src='/movie-html\icons-img\facebook.png' alt='facebook-logo' />
+        <img src='\movie-html\icons-img\facebook.png' alt='facebook-logo' />
         </div>
       </a>
 
       <a href="#">
         <div class="twitter">
-          <img src='/movie-html\icons-img\twitter.png' alt="twitter-logo" />
+          <img src='\movie-html\icons-img\twitter.png' alt="twitter-logo" />
         </div>
       </a>
 
       <a href="#">
         <div class="instagram">
-          <img src='/movie-html\icons-img\instagram.png' alt='instagram-logo' />
+          <img src='\movie-html\icons-img\instagram.png' alt='instagram-logo' />
         </div>
       </a>
 
     </div>
 
   </footer>
+
+  <script href="script.js">
+  </script>
 </html>
